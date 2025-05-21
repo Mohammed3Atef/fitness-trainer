@@ -9,14 +9,14 @@ const testimonials = [
         name: "Sarah M.",
         role: "Weight Loss Journey",
         image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80",
-        quote: "Coach Anas changed my life! I've lost 30 pounds and gained so much confidence. His personalized approach and constant support made all the difference.",
+        quote: "Coach Anas changed my life! I&apos;ve lost 30 pounds and gained so much confidence. His personalized approach and constant support made all the difference.",
         results: ["Lost 30 pounds", "Improved energy levels", "Better sleep quality"]
     },
     {
         name: "James K.",
         role: "Muscle Building",
         image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
-        quote: "The best trainer I've ever worked with. His knowledge of strength training and nutrition helped me achieve my muscle gain goals faster than I expected.",
+        quote: "The best trainer I&apos;ve ever worked with. His knowledge of strength training and nutrition helped me achieve my muscle gain goals faster than I expected.",
         results: ["Gained 15 pounds of muscle", "Increased strength by 40%", "Better form and technique"]
     },
     {
@@ -71,7 +71,7 @@ export default function TestimonialsPage() {
                                             <p className="text-orange-500">{testimonial.role}</p>
                                         </div>
                                     </div>
-                                    <blockquote className="text-lg italic mb-6">"{testimonial.quote}"</blockquote>
+                                    <blockquote className="text-lg italic mb-6">&ldquo;{testimonial.quote}&rdquo;</blockquote>
                                     <div className="space-y-2">
                                         {testimonial.results.map((result) => (
                                             <div key={result} className="flex items-center">

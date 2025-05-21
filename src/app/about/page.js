@@ -17,40 +17,42 @@ export default function AboutPage() {
                             transition={{ duration: 0.8 }}
                             className="text-center mb-16"
                         >
-                            <h1 className="text-5xl font-bold mb-6">About Coach Anas</h1>
+                            <h1 className="text-5xl font-bold mb-6">About Coach Anas Osman</h1>
                             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-                                Your journey to fitness excellence starts here. Learn more about my approach, experience, and commitment to your success.
+                                With over a decade of experience in personal training and fitness coaching, I&apos;ve helped hundreds of clients transform their lives through personalized fitness programs.
                             </p>
                         </motion.div>
 
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                             <motion.div
                                 initial={{ opacity: 0, x: -40 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
-                                transition={{ duration: 0.8 }}
+                                transition={{ duration: 0.7 }}
                             >
-                                <Image
-                                    src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80"
-                                    alt="Coach Anas in action"
-                                    width={600}
-                                    height={400}
-                                    className="rounded-2xl shadow-xl"
-                                />
+                                <div className="relative h-[500px] rounded-2xl overflow-hidden">
+                                    <Image
+                                        src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80"
+                                        alt="Coach Anas Osman"
+                                        fill
+                                        className="object-cover"
+                                    />
+                                </div>
                             </motion.div>
+
                             <motion.div
                                 initial={{ opacity: 0, x: 40 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
-                                transition={{ duration: 0.8 }}
+                                transition={{ duration: 0.7 }}
                                 className="space-y-6"
                             >
-                                <h2 className="text-3xl font-bold">My Story</h2>
+                                <h2 className="text-3xl font-bold mb-4">My Journey</h2>
                                 <p className="text-lg leading-relaxed">
-                                    My journey in fitness began over a decade ago when I discovered my passion for helping others achieve their health and wellness goals. After completing my certifications and gaining extensive experience, I've developed a unique approach that combines scientific training methods with personalized attention.
+                                    My journey in fitness began when I discovered my passion for helping others achieve their health and wellness goals. I specialize in strength training, weight loss, and athletic performance enhancement.
                                 </p>
                                 <p className="text-lg leading-relaxed">
-                                    I believe that fitness is not just about physical transformation but also about mental strength and overall well-being. My mission is to empower my clients to become the best versions of themselves through sustainable lifestyle changes and consistent training.
+                                    My approach combines scientific training methods with personalized attention to ensure each client reaches their full potential. Whether you&apos;re a beginner or an experienced athlete, I&apos;ll create a program tailored to your specific needs and goals.
                                 </p>
                             </motion.div>
                         </div>
